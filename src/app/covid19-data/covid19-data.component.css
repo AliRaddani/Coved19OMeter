@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+#tableTitle {
+    color: rgb(142, 148, 142);
+    font-weight: bold;
+}
+
+#deaths {
+    background-color: red;
+    text-align: center;
+}
+
+table {
+    font-weight: bold;
+    width: 80%;
+}
+
+#myInput {
+    background-image: url('https://cdn4.iconfinder.com/data/icons/meBaze-Freebies/512/search.png');
+    background-size: 20px;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 50%;
+    font-size: 16px;
+    padding: 10px 20px 12px 40px;
+    border: 1px solid rgb(83, 80, 80);
+    margin-bottom: 12px;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.width-md {
+    width: 138spx !important;
+}
+
+#myTabel {
+    border: 2px solid black;
+}

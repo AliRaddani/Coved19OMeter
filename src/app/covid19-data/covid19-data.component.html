@@ -1,0 +1,25 @@
+<div style="text-align:center; ">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for States.." title="Type in a name">
+</div>
+<br />
+<div style="text-align:center; ">
+    <table class=" table   table-bordered table-striped center" id="myTable">
+        <tr id="tableTitle" class="table-defaults" style="border-color: black;">
+            <td> State</td>
+            <td> Start Week</td>
+            <td>End Week </td>
+            <td> Covid19 Deaths</td>
+            <td> State Over All Percentage Of Deaths </td>
+        </tr>
+        <tr *ngFor="let s of statesData ">
+
+            <td style="color:rgb(7, 168, 221)" *ngIf="s.stateName.indexOf('United States') === -1 ">{{s.stateName}}</td>
+            <td *ngIf="s.stateName.indexOf('United States') === -1">{{s.startWeek | date : 'MM-dd-yyyy'}}</td>
+            <td *ngIf="s.stateName.indexOf('United States') === -1">{{s.endWeek | date : 'MM-dd-yyyy'}}</td>
+            <td *ngIf="s.stateName.indexOf('United States') === -1" class="width-md" id="deaths">{{s.covid19Deaths}}
+            </td>
+            <td *ngIf="s.stateName.indexOf('United States') === -1">{{s.percentageUsCovid19Deaths}}</td>
+        </tr>
+
+    </table>
+</div>
